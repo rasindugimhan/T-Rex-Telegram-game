@@ -7,7 +7,7 @@ const server = express();
 const bot = new TelegramBot(TOKEN, { polling: true } );
 
 const port = process.env.PORT || 5000;
-const gameName = "trexjump";
+const gameName = "T_Rex_Game";
 
 const queries = {};
 
