@@ -26,7 +26,7 @@ bot.on("callback_query", function (query) {
     }
 });
 bot.on("inline_query", function(iq) {
-      bot.answerInlineQuery(iq.id, [ { type: "game", id: "0", game_short_name: gameName } ] ); 
+      bot.answerCallbackQuery(iq.id, [ { type: "game", id: "0", game_short_name: gameName } ] ); 
 });
 
 server.use(express.static(path.join(__dirname, 'public')));
